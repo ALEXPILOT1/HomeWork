@@ -5,22 +5,13 @@
 Console.Clear();
 Console.WriteLine("Введите число N");
 int N = int.Parse(Console.ReadLine());
-int i = 1;
-bool not = true;
-
-while(i<=N)
+for (int i=0; i<=N; i++)
 {
-    if(i%2==0)
-    {
-        Console.WriteLine(i + " ");
-    }
-    i++; 
-    if (not)
-     {
-         Console.WriteLine("Нет чётных чисел!");
-     }
-     break; 
-    
+   if (i%2==0)
+   {
+    Console.Write(i + " ");
+   }
+   Console.ReadLine();
 }
 
 
